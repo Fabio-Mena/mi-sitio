@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi pagina</title>
     <link rel="stylesheet" href="./css/estilos.css">
-</head>
-<body>
-    <header>
+  </head>
+ <body>
+    <header class="header">
         <a href="index.html" class="logo">Mi sitio</a>
         <button  class="hamburguesa" id="btnmenu">
             <span ></span>
@@ -15,7 +15,7 @@
             <span ></span>
         </button>
 
-        <nav>
+        <nav class="menu" id="menu">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
@@ -26,32 +26,65 @@
         </nav>
 
     </header>
-
     <main>  
-       <section class="portada">
-        <h1>Lavacar de autos a domicilio</h1>
-        <p>dejamos su auto como nuevo sin que tenga que salir de casa</p>
-        <a href="contacto.html" class="btn">reservar</a>
+       <section class="portada contenedor">
+         <h1>Lavacar de autos a domicilio</h1>
+          <p>dejamos su auto como nuevo sin que tenga que salir de casa</p>
+         <a href="contacto.html"class="boton">reservar</a>
        </section>
-       <section class="servicios">
-        <h2>Servicios</h2>
-        <ul>
-            <li>Lavado </li>
-            <li>pulido</li>
-            <li>encerado</li>
-        </ul>
+       <section class="servicios contenedor">
+         <h2>Servicios</h2>
+        <div class="cards">
+             <article class="tarjeta">
+                <img src="img/servicio-1.jpg" alt="Servicio 1">
+                <h3>Título</h3>
+                <p>Descripción breve.</p>
+                 <a href="#" class="boton">Ver más</a>
+           </article>
+            <article class="tarjeta">
+                <img src="img/servicio-1.jpg" alt="Servicio 1">
+                <h3>Título</h3>
+                <p>Descripción breve.</p>
+                 <a href="#" class="boton">Ver más</a>
+           </article>
+            <article class="tarjeta">
+                <img src="img/servicio-1.jpg" alt="Servicio 1">
+                <h3>Título</h3>
+                <p>Descripción breve.</p>
+                 <a href="#" class="boton">Ver más</a>
+           </article>
+            <!-- repite el article hasta tener seis tarjetas -->
+        </div>
+       
+
        </section>
 
-      <section class="galeria">
+       <section class="preguntas contenedor">
+          <h2>Preguntas frecuentes</h2>
+            <div class="accordion">
+                 <div class="item">
+                      <button class="titulo">¿Pregunta uno?</button>
+                     <div class="contenido"><p>Respuesta uno.</p></div>
+                 </div>
+                 <div class="item">
+                      <button class="titulo">¿Pregunta uno?</button>
+                     <div class="contenido"><p>Respuesta uno.</p></div>
+                 </div>
+                 <div class="item">
+                      <button class="titulo">¿Pregunta uno?</button>
+                     <div class="contenido"><p>Respuesta uno.</p></div>
+                 </div>
+               <!-- repite .item hasta tener cuatro preguntas -->
+            </div>
+        </section>
+
+      <section class="galeria contenedor">
         <h2>Galería</h2>
         <p> algunos de nuestros trabajos</p>
-        <img src="./img/Image20261027204719.png" alt="Auto recién lavado frente a una casa">
-         <img src="./img/Image20261027204725.jpg" alt="Interior de un auto aspirado y limpio">
-        <img src="./img/img-3.webp" alt="Interior de un auto aspirado y limpio">
-        
-        
-        
-        </section>
+        <img src="./img/Image20261027204719.png" alt="Auto 1">
+         <img src="./img/Image20261027204725.jpg" alt="Auto 2">
+        <img src="./img/img-3.webp" alt="Auto 3">  
+      </section>
 
     </main>
 
@@ -67,7 +100,7 @@
         <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
   </ul>
   <p>&copy; 2026 Mi Sitio</p>
-</footer>
+ </footer>
 
 
     <script src="./js/main.js"></script>
